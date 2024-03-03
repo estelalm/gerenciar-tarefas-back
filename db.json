@@ -6,7 +6,10 @@
       "email": "joao@silva.com",
       "senha": "joao",
       "imagem": null,
-      "premium": true
+      "premium": true,
+      "seguindo": [
+        2
+      ]
     },
     {
       "id": 2,
@@ -14,7 +17,10 @@
       "email": "maria@salvagni.com",
       "senha": "maria",
       "imagem": null,
-      "premium": false
+      "premium": false,
+      "seguindo": [
+        1
+      ]
     },
     {
       "id": 3,
@@ -22,30 +28,30 @@
       "email": "gabriel@pereira.com",
       "senha": "gabriel",
       "imagem": null,
-      "premium": false
+      "premium": false,
+      "seguindo": [
+        1,
+        2
+      ]
     },
     {
       "id": 4,
-      "nome": "Estela",
-      "email": "estela@gmail.com",
-      "senha": "OrbitLoona",
-      "imagem": null,
-      "premium": false
-    },
-    {
-      "id": 5,
       "nome": "estela",
       "email": "estela@gmail.com",
       "senha": "senha",
       "imagem": null,
-      "premium": true
-
+      "premium": true,
+      "seguindo": [
+        1,
+        2,
+        3
+      ]
     }
   ],
   "tarefas": [
     {
       "id": 1,
-      "descrição": "Limpar a Casa",
+      "descricao": "Limpar a Casa",
       "dataConclusão": "31/01/2024",
       "idUsuario": 1,
       "publico": false,
@@ -53,29 +59,65 @@
     },
     {
       "id": 2,
-      "descrição": "Aprender inglês",
+      "descricao": "Aprender inglês",
       "dataConclusão": "30/10/2024",
       "publico": true,
       "idUsuario": 1,
-      "comentarios":[
+      "comentarios": [
         {
           "id": 1,
           "idUsuario": 2,
-          "conteudo": "Apaga essa tarefa você nunca vai aprender mesmo",
+          "conteudo": "Apaga essa tarefa >:(",
           "dataTarefa": "25/08/2024"
         }
       ]
+    },
+    {
+      "id": 3,
+      "descricao": "tarefa privada",
+      "dataConclusão": "02/03/2024",
+      "publico": false,
+      "idUsuario": "2",
+      "comentarios": []
+    },
+    {
+      "id": 4,
+      "descricao": "tarefa publica",
+      "dataConclusão": "02/04/2024",
+      "publico": true,
+      "idUsuario": "3",
+      "comentarios": [
+        {
+          "id": 3,
+          "idUsuario": "4",
+          "conteudo": "Comentário",
+          "dataComentario": "03/03/2024"
+        }
+      ]
+    },
+    {
+      "descricao": "tarefa privada",
+      "dataConclusão": "03/03/2024",
+      "publico": false,
+      "idUsuario": "4",
+      "comentarios": [],
+      "id": 5
+    },
+    {
+      "descricao": "trocar as cores do site",
+      "dataConclusão": "21/03/2024",
+      "publico": true,
+      "idUsuario": "4",
+      "comentarios": [],
+      "id": 7
+    },
+    {
+      "descricao": "preencher os espaços",
+      "dataConclusão": "03/03/2024",
+      "publico": false,
+      "idUsuario": "4",
+      "comentarios": [],
+      "id": 8
     }
-  ],
-  "seguindo":[
-      {
-        "idUsuario": 1,
-        "usuarios": [2, 3, 4]
-      },
-      {
-        "idUsuario": 2,
-        "usuarios": [1]
-      }
   ]
 }
-
