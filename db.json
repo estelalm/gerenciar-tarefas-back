@@ -17,9 +17,11 @@
       "email": "maria@salvagni.com",
       "senha": "maria",
       "imagem": null,
-      "premium": false,
+      "premium": true,
       "seguindo": [
-        1
+        "5",
+        "4",
+        "1"
       ]
     },
     {
@@ -44,8 +46,35 @@
       "seguindo": [
         1,
         2,
-        3
+        3,
+        "1"
       ]
+    },
+    {
+      "nome": "Chuu",
+      "email": "chuu@email.com",
+      "senha": "chuu",
+      "imagem": null,
+      "premium": true,
+      "seguindo": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ],
+      "id": 5
+    },
+    {
+      "nome": "criar",
+      "email": "a@g.com",
+      "senha": "aa",
+      "imagem": null,
+      "premium": false,
+      "seguindo": [
+        "4",
+        "1"
+      ],
+      "id": 6
     }
   ],
   "tarefas": [
@@ -63,21 +92,6 @@
       "dataConclusão": "30/10/2024",
       "publico": true,
       "idUsuario": 1,
-      "comentarios": [
-        {
-          "id": 1,
-          "idUsuario": 2,
-          "conteudo": "Apaga essa tarefa >:(",
-          "dataTarefa": "25/08/2024"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "descricao": "tarefa privada",
-      "dataConclusão": "02/03/2024",
-      "publico": false,
-      "idUsuario": "2",
       "comentarios": []
     },
     {
@@ -88,36 +102,34 @@
       "idUsuario": "3",
       "comentarios": [
         {
-          "id": 3,
+          "id": 2,
           "idUsuario": "4",
-          "conteudo": "Comentário",
-          "dataComentario": "03/03/2024"
+          "conteudo": "AAAAAAAA",
+          "dataComentario": "05/03/2024"
         }
       ]
     },
     {
+      "id": 11,
       "descricao": "tarefa privada",
-      "dataConclusão": "03/03/2024",
-      "publico": false,
-      "idUsuario": "4",
-      "comentarios": [],
-      "id": 5
+      "dataConclusão": "05/03/2024",
+      "idUsuario": "4"
     },
     {
-      "descricao": "trocar as cores do site",
+      "descricao": "Fazer funcionar...........................",
       "dataConclusão": "21/03/2024",
       "publico": true,
       "idUsuario": "4",
       "comentarios": [],
-      "id": 7
+      "id": 12
     },
     {
-      "descricao": "preencher os espaços",
-      "dataConclusão": "03/03/2024",
-      "publico": false,
+      "descricao": "Tarefa passada",
+      "dataConclusão": "04/03/2024",
+      "publico": true,
       "idUsuario": "4",
       "comentarios": [],
-      "id": 8
+      "id": 13
     }
   ]
 }
