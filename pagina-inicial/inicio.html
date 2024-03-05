@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Lakki+Reddy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./inicio.css">
+    <link rel="icon" href="../img/check.png">
+    <script src="./inicio.js" type="module" defer></script>
+    <title>Minhas tarefas</title>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.svg" alt="Ícone de 'checkbox' com 'My Tasks' escrito ao lado" class="logo">
+        <div class="perfil">
+            <a href="../perfil/perfil.html" id="perfil-link"></a>
+            <p>Olá, <span id="nomeUsuario"></span>! <br>
+                <a href="../index.html" id="sair">Sair da conta?</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="main-header-container">
+            <div class="barra-pesquisa">
+                <input type="text" class="campo-pesquisa" id="campo-pesquisa" placeholder="Pesquisar">
+                <img src="" alt="">
+            </div>
+            <div class="menu" id="menu">
+                    Seguir usuários: 
+            </div>
+        </div>
+        <div class="display-tarefas">
+            <section class="minhas-tarefas" id="minhas-tarefas">
+                <div class="header-minhas-tarefas">
+                    <h3>Minhas tarefas</h3>
+                    <a href="../adicionar-tarefa/add-tarefa.html" class="add-tarefa" id="add-tarefa">Adicionar
+                        Tarefa</a>
+                </div>
+                <div class="container-minhas-tarefas">
+                    <div class="tarefas-pendentes" id="hoje">
+                        <h3>Para hoje!!!</h3>
+                        <div class="tarefas" id="tarefas-hoje">Nenhuma tarefa a ser realizada hoje!!</div>
+                    </div>
+                    <div class="tarefas-pendentes" id="pendentes">
+                        <h3>Tarefas pendentes</h3>
+                        <div class="tarefas" id="tarefas">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="timeline" id="timeline">
+                <div class="header-timeline">
+                    <h3>Timeline</h3>
+                </div>
+                <div class="container-timeline" id="container-timeline">
+                    <!-- <div class="tarefa-timeline">
+                        <div class="post-container">
+                            <div class="foto-perfil">
+                                <img class="coroa" src="../img/coroa.png" alt="">
+                                <a href="#"><img src="../img/usuario.webp" alt=""></a>
+                            </div>
+                            <div class="post-tarefa">
+                                <p>Nome do Usuário</p>
+                                    <div class="tarefa time-tarefa">
+                                        <button class="icone-e-cor"></button>
+                                        <div class="info-tarefa"><span class="titulo-tarefa">nova versão</span><span
+                                                class="data-tarefa">27/02/2024</span></div><button
+                                            class="deletar-tarefa"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comentarios">
+                                <div class="post-comentario">
+                                    <div class="foto-perfil foto-comentario">
+                                        <a href="../perfil/perfil.html"><img src="../img/usuario.webp" alt=""></a>
+                                    </div>
+                                    <p class="comentario">Usuario1500: nova versão do que?
+                                        Explica melhor da próxima vez
+                                    </p>
+                                </div>                            <div class="post-comentario">
+                                    <div class="foto-perfil foto-comentario">
+                                        <a href="../perfil/perfil.html"><img src="../img/usuario.webp" alt=""></a>
+                                    </div>
+                                    <p class="comentario">Usuario1500: nova versão do que?
+                                        Explica melhor da próxima vez
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./add-tarefa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./add-tarefa.js" defer></script>
+    <title>My Tasks</title>
+</head>
+<body>
+    <header>
+        <header>
+            <a href="../pagina-inicial/inicio.html" class="voltar"><img src="../img/voltar.svg" alt=""></a>
+            <img src="../img/logo.svg" alt="Ícone de 'checkbox' com 'My Tasks' escrito ao lado" class="logo">
+
+        </header>
+    </header>
+    <main>
+        <h1>CRIAR UMA TAREFA</h1>
+        <div class="card">
+                <div class="input-container">
+                    <input type="text"  id="titulo">
+                    <label for="">Título da tarefa</label>
+                </div>
+                <div class="input-container">
+                    <input type="date" id="dataConclusao">
+                    <label for="">Data de conclusão</label>
+                </div>
+                <div class="visibilidade">
+                    <input type="radio" name="visibilidade" id="privado" class="privado">
+                    <label for="">Privado</label>
+                    <input type="radio" name="visibilidade" id="publico" class="publico">
+                    <label for="">Publico</label>
+                </div>
+            </div>
+        </div>
+        <button id="adicionar">ADICIONAR</button>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

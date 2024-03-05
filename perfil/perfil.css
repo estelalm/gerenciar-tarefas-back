@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #C8A4E9;
+}
+
+.lakki-reddy-regular {
+    font-family: "Lakki Reddy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+header{
+    width: 100vw;
+    height: 20vh;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 100px;
+}
+main{
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.card{
+    height: 73vh;
+    width: 25vw;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    gap: 55px;
+}
+
+.card img{
+    height: 12vh;
+}
+
+h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #1C2A34;
+}
+
+span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    color: #1C2A34;
+}
+
+.usuario{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+.coroa{
+    height: 40px;
+    width: 70px;
+}
+
+
+.informacoes{
+    display: grid;
+    gap: 12px;
+}
+
+.info{
+    border: 1px solid black;
+    height: 3.5vh;
+    border-radius: 10px;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    padding: 5px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.serPremium{
+    display: grid;
+    justify-content: center;
+}
+
+.premium{
+    background-color: #B884E9;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 6vh;
+    width: 9vw;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Lakki Reddy", serif;
+    font-weight: bold;
+    color: #3B0045;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.premium img{
+    height: 28px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.remover{
+    height: 7vh;
+    width: 8vw;
+    background-color: #FF5B65;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+.seguir{
+    height: 7vh;
+    width: 8vw;
+    background-color: #B884E9;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}

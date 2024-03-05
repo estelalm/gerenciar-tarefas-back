@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C8A4E9;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 100px;
+}
+
+main{
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.card{
+    height: 58vh;
+    width: 35vw;
+    background-color: #F2E4FF;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 25px;
+}
+
+.card img{
+    height: 7vh;
+}
+
+
+h3{
+    font-family: "Lakki Reddy", serif;
+    color: #3B0045;
+    font-size: 26px;
+}
+
+.lista{
+    width: 22vw;
+    font-size: 17px;
+    color: #0B001E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.botaoPremium{
+    height: 5vh;
+    width: 10vw;
+    font-family: "Lakki Reddy", serif;
+    border-radius: 5px;
+    background-color: #340C67;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}

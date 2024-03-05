@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6C0F8;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 70px;
+}
+.voltar{
+    transition: 0.5s;
+}
+.voltar:hover{
+    transform: scale(1.1);
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    place-content: center;
+    gap: 1vh;
+}
+
+.card{
+    height: 320px;
+    width: 400px;
+    background-color: #F9F9F7;
+    border-radius: 10px;
+    display: grid;
+    padding: 64px 24px;
+    border: solid 1px black;
+    place-content: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1{
+    font-family: 'Lakki Reddy', serif;
+    text-align: center;
+    background: white;
+    font-size: 1.8rem;
+    border: solid 1px black;
+    padding: 12px;
+    padding-top: 24px;
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input-container{
+    gap: 8px;
+    color: #7097B5;
+}
+input{
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: solid 2px #7097B5;
+    padding: 8px;
+    width: 100%;
+}
+label{
+    padding: 4px;
+}
+
+.esqueci-senha{
+    text-align: end;
+    font-family: 'Lakki Reddy', serif;
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    font-family: 'Lakki Reddy', serif;
+    color: white;
+    background-color: #8F5FBC;
+    border: solid 1px black;
+    border-radius: 12px;
+    height: 8vh;
+    font-size: 1.2rem;
+}
+
+.visibilidade{
+    display: flex;
+}

@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --tarefa: #9EC5E2;
+    --fundo2: #C8A4E9;
+    --modo-editar: #F6C0F8;
+    --botao: #8F5FBC;
+    --branco: #F4F4ED;
+    --titulos: 'Lakki Reddy', serif;
+    --textos: 'Inter', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 16vh 1fr;
+    background-color: var(--fundo2);
+    overflow: hidden;
+    padding: 10px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 64px;
+}
+
+.perfil{
+    font-family: var(--textos);
+    display: flex;
+    align-items: center;
+}
+.perfil > a{
+    padding: 10px;
+    height: 60%;
+    aspect-ratio: 1/1;
+    background-image: url(../img/usuario.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--fundo2);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #8f5fbc71;
+}
+
+
+main{
+    padding: 2vh 3vw;
+    background-color: var(--botao);
+    overflow: hidden;
+}
+
+.main-header-container{
+    height: 10%;
+    min-height: 60px;
+    display: flex;
+    padding: 14px 0;
+    gap: 24px;
+}
+.barra-pesquisa{
+    display: flex;
+    width: 50%;
+    background-color: var(--fundo2);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 4px;
+}
+.campo-pesquisa{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+}
+.menu{
+    width: 50%;
+    background-color: var(--fundo2);
+    display: flex;
+    padding: 2px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    font-family:  var( --textos);
+    gap: 6px;
+}
+.menu::-webkit-scrollbar{
+    display: none;
+}
+.menu a {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/usuario.webp);
+}
+
+.display-tarefas{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    height: 90%;
+    font-family: var(--textos);
+
+}
+.minhas-tarefas{
+    width: 50%;
+    height: 100%;
+}
+.timeline{
+    width: 50%;
+    height: 100%;
+   }
+
+/* minhas tarefas */
+.header-minhas-tarefas{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--branco);
+    align-items: center;
+}
+.container-minhas-tarefas{
+    background-color: white;
+    height: 90%;
+    padding: 24px;
+    overflow-y: scroll;
+}
+.painel-premium{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--tarefa);
+    font-family: var(--textos);
+}
+.painel-premium h2{
+    font-family: var(--titulos);
+}
+.tarefas-pendentes{
+    width: 100%;
+    font-family: var(--textos);
+}
+h3{
+    padding: 12px;
+}
+.tarefas{
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+
+.tarefa{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    background-color: var(--branco);
+    overflow: hidden;
+    border-radius: 10px;
+    border: solid black 2px;
+    font-size: 1.1rem;
+}
+.icone-e-cor{
+    width: 20%;
+    background-color: var(--tarefa);
+    padding: 12px;
+    display: grid;
+    place-content: center;
+    border: none;
+    border-right: solid black 1px;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/edit.svg");
+}
+.time-tarefa .icone-e-cor{
+    background-image: url("../img/comentar.png");
+    background-position: center;
+    background-size: 50%;
+}
+.icone-e-cor:hover{
+    background-color: #539ed8;
+}
+.info-tarefa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    width: 80%;
+    text-overflow: ellipsis;
+}
+.info-tarefa span{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icone-e-cor.edit-mode{
+    background-color: var(--modo-editar);
+    background-image: url("../img/save.svg");
+    background-size: 80%;
+}
+
+.add-tarefa{
+    font-size: 1.2rem;
+    color: black;
+    background-color: var(--modo-editar);
+    padding: 12px;
+    height: 60%;
+    border: solid 2px black;
+    border-radius: 12px;
+    font-family: var(--textos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-tarefa img{
+    padding: 24px;
+
+}
+.deletar-tarefa{
+    border: none;
+    background-image: url(../img/delete.svg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    transform: translate(-0.4vw, 1vh);
+}
+
+input{
+    font-family: var(--textos);
+    padding: 4px;
+    background: white;
+    border: none;
+    border-bottom: solid 1px black;
+}
+input:hover{
+    color: rgb(45, 92, 180);
+}
+
+/* timeline */
+.header-timeline{
+    height: 10%;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+}
+.container-timeline{
+    padding: 24px;
+    height: 90%;
+    background-color: white;
+    overflow-y: scroll;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarefa-timeline{
+    display: grid;
+    gap: 12px;
+}
+.post-container{
+    display: flex;
+}
+.foto-perfil{
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
+.coroa{
+    height: 14px !important;
+}
+.foto-perfil img{
+    height: 50px;
+}
+.post-comentarios{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.post-comentario{
+    display: flex;
+    padding-left: 80px;
+    gap: 12px;
+}
+.post-comentario p{
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: var(--branco);
+    padding: 10px;
+    width: 26vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.foto-comentario a{
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.deletar-comentario{
+    border: none;
+    background-image: url(../img/delete.svg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    place-self: end;
+}
+
+.comentar-container{
+    display: flex;
+    gap: 12px;
+    margin-left: 132px;
+}
+
+.comentar-container{
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: var(--branco);
+    padding: 10px;
+    width: 15vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comentar-container button{
+    width: 100px;
+    height: 25px;
+    background-color: #F6C0F8;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Lakki Reddy', serif;
+}
+
+.campoComentar input{
+    outline-style: none;
+    width: 20px;
+}
